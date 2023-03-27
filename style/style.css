@@ -15,7 +15,7 @@ nav {
 }
 nav a, nav h1 {
     color: white;
-    margin-right: 20px;
+    margin-right:1fr;
     padding: 5px 20px ;
 }
 nav a:last-child {
