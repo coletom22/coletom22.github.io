@@ -1,5 +1,6 @@
   body {
-    background-color: #2B2B2B;
+   background-color: #2B2B2B; 
+    background: radial-gradient(#686868 0%, #2B2B2B 100%);
   }
   .container {
     display: flex;
@@ -68,7 +69,7 @@
   }
   #image-container {
     display: grid;
-    margin-top: 250px;
+    margin-top: 190px;
     grid-template-columns: repeat(2, 200px);
     grid-template-rows: repeat(2, 100px);
     grid-row-gap: 240px;
@@ -153,6 +154,7 @@
     }
     #image-container {
       grid-column-gap: 250px;
+      grid-row-gap: 200px;
     }
     
   }

@@ -4,6 +4,50 @@
     <meta charset="UTF-8">
     <link rel = "stylesheet" href = "style/style.css">
     <script src = "nodeJs/script.js"></script>
+    <style>
+        /* CSS styles for form elements */
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #fff; /* white */
+        }
+        h1 {
+          text-align: center;
+          color: #124f0d; /* dark green */
+        }
+        label {
+          display: block;
+          margin-bottom: 5px;
+          color: #2b2b2b; /* dark grey */
+        }
+        input[type="text"], select, textarea {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #2b2b2b; /* dark grey */
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-bottom: 20px;
+        }
+        input[type="submit"] {
+          background-color: #124f0d; /* dark green */
+          color: #fff;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        input[type="submit"]:hover {
+          background-color: #0e3d0a; /* darker green */
+        }
+        textarea {
+          width: 100%;
+          height: 100px;
+          padding: 10px;
+          border: 1px solid #2b2b2b; /* dark grey */
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-bottom: 20px;
+        }
+      </style>
 </head>
 
 <body>
@@ -17,5 +61,36 @@
         <a href = "projects.html">Projects</a>
         <a href = "contact.html" id = "last">Contact</a>
     </nav>
+
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="John Doe" required>
+  
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="john@gmail.com" required>
+  
+        <label for="phone">Phone number:</label>
+        <input type="text" id="phone" name="phone" placeholder="(XXX)-XXX-XXXX" required>
+  
+        <label for="reason">Reason for inquiry:</label>
+        <select id="reason" name="reason">
+          <option value="work">Work</option>
+          <option value="hobbies">Hobbies</option>
+          <option value="questions">Questions</option>
+        </select>
+  
+        <label for="note">Note (optional):</label>
+        <textarea id="note" name="note" placeholder="Your note.."></textarea>
+  
+        <input type="submit" value="Submit">
+      </form>
+      <script>
+        // Format the phone number input to (xxx)-xxx-xxxx
+        const phoneInput = document.getElementById('phone');
+        phoneInput.addEventListener('input', function (e) {
+          const phoneNumber = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+          e.target.value = !phoneNumber[2] ? phoneNumber[1] : `(${phoneNumber[1]})-${phoneNumber[2]}${phoneNumber[3] ? `-${phoneNumber[3]}` : ''}`;
+        });
+      </script>
 </body>
 </html>
