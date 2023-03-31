@@ -1,8 +1,13 @@
-body {
-  background-color: #2B2B2B;
-}
-nav {
-  height: 75px;
+  body {
+    background-color: #2B2B2B;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  nav {
+    flex-grow: 0;
+    height: 75px;
     display: flex;
     align-items: center;
     background-color: #124F0D;
@@ -12,70 +17,107 @@ nav {
     font-weight: bold;
     position: fixed;
     top: 0;
+    z-index: 1;
     right: 0;
     left: 0;
     justify-content: center;
     align-content: center;
-}
-.center a{
-  margin: 30px;
-  font-size: 28px;
-}
-.center h1 {
-  font-size: 35px;
-}
-.center {
-  text-align: center;
-  display: flex;
-  align-items:center;
-}
-li {
-  list-style: none;
-  justify-items: center;
-}
-.left {
-  list-style: none;
-  position: absolute;
-  left: 0;
-  top: 20px;
-  text-align: left;
-
-}
-
-nav a, nav h1 {
+  }
+  .center a {
+    margin: 30px;
+    font-size: 28px;
+  }
+  .center h1 {
+    font-size: 35px;
+  }
+  .center {
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  li {
+    list-style: none;
+    justify-items: center;
+  }
+  .left {
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    text-align: left;
+  }
+  nav a, nav h1 {
     color: white;
-    margin-right:1fr;
+    margin-right: 1fr;
     padding: 5px 20px ;
-}
-
-nav a:hover {
+  }
+  nav a:hover {
     background-color: wheat;
-}
-
-nav a.active {
+    border-radius: 20px;
+  }
+  nav a.active {
     color: olive;
     background-color: white;
-}
+  }
+  @media only screen and (max-width: 820px) {
+    nav {
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 120px;
+      background-color: #124F0D;
+      z-index: 1;
+      overflow-x: hidden;
+      transition: 0.5s;
 
-.div {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-content: center;
-}
-
-#image-container {
+    }
+    section {
+      flex-direction: column;
+    }
+    .center a {
+      font-size: 23px;
+    }
+    .center h1 {
+      font-size: 26px;
+    }
+    nav a, nav h1 {
+      padding: 10px;
+      display: block;
+    }
+  }
+  .div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+  }
+  #image-container {
     display: grid;
-    margin-top: 200px;
+    margin-top: 250px;
     grid-template-columns: repeat(2, 200px);
     grid-template-rows: repeat(2, 100px);
     grid-row-gap: 240px;
     grid-column-gap: 410px;
     align-items: center;
     justify-items: center;
-    height: auto;
   }
-  
+  @media only screen and (max-width: 820px) {
+    #image-container {
+      flex-grow: 1;
+      margin-left: 150px;
+      margin-right: 30px;
+      margin-top: 20px;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 70%;
+      grid-row-gap: 40px;
+    }
+
+  }
   figure {
     width: 450px;
     border-radius: 20px;
@@ -83,31 +125,29 @@ nav a.active {
     margin: 0;
     position: relative;
     transition: transform 0.2s ease-out;
+  }
 
+  @media only screen and (max-width: 820px) {
+  figure {
+    width: 325px;
   }
+}
   figure:hover {
-      transform: translateY(-10px);
+    transform: translateY(-10px);
   }
-  
   img {
     border-radius: 18px;
     max-width: 100%;
     overflow: hidden;
     width: 100%;
   }
-  .white-bar {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: white;
-    height: 30px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-  }
-  
-  .white-bar p {
-    margin: 0;
-    text-align: center;
-    padding: 10px;
+
+  @media only screen and (max-width: 1052px) {
+    .center a {
+      font-size: 23px;
+      margin: 20px;
+    }
+    .center h1 {
+      font-size: 26px;
+    }
   }
