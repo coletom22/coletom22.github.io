@@ -6,10 +6,7 @@
     <script src = "nodeJs/script.js"></script>
     <style>
         /* CSS styles for form elements */
-        body {
-          font-family: Arial, sans-serif;
-          background-color: #fff; /* white */
-        }
+        
         h1 {
           text-align: center;
           color: #124f0d; /* dark green */
@@ -52,17 +49,19 @@
 
 <body>
  
+  <div class="container">
     <nav>
-        <a href = "index.html" id = "first">Home</a>
-        <a href = "hobbies.html">Hobbies</a>
-        <a href = "skills.html">Skills</a>
+      <li class="left"><a href="index.html">Home</a></li>
+      <section class="center">
+        <a href="hobbies.html">Hobbies</a>
+        <a href="skills.html">Skills</a>
         <h1>Cole Tom</h1>
-        <a href = "goals.html">Goals</a>
-        <a href = "projects.html">Projects</a>
-        <a href = "contact.html" id = "last">Contact</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </section>
     </nav>
-
-    <form>
+    <div class="div">
+      <form>
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" placeholder="John Doe" required>
   
@@ -92,5 +91,9 @@
           e.target.value = !phoneNumber[2] ? phoneNumber[1] : `(${phoneNumber[1]})-${phoneNumber[2]}${phoneNumber[3] ? `-${phoneNumber[3]}` : ''}`;
         });
       </script>
+    </div>
+  </div>
+
+    
 </body>
 </html>

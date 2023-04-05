@@ -1,6 +1,6 @@
   body {
-   background-color: #2B2B2B; 
-    background: radial-gradient(#686868 0%, #2B2B2B 100%);
+   background-color: #1a1a1a; 
+    background: radial-gradient(#353535 0%, #1a1a1a 100%);
   }
   .container {
     display: flex;
@@ -68,6 +68,7 @@
     align-content: center;
   }
   #image-container {
+    margin-left: -20px;
     display: grid;
     margin-top: 190px;
     grid-template-columns: repeat(2, 200px);
@@ -103,7 +104,7 @@
     width: 100%;
   }
 
-  @media only screen and (max-width: 820px) {
+  @media only screen and (max-width: 860px) {
     nav {
       flex-direction: column;
       position: fixed;
@@ -159,7 +160,7 @@
     
   }
 
-  @media only screen and (max-width: 820px) {
+  @media only screen and (max-width: 860px) {
     #image-container {
       flex-grow: 1;
       margin-left: 150px;
@@ -171,11 +172,14 @@
       align-items: center;
       grid-row-gap: 40px;
     }
+    form {
+      margin-left: 120px;
+    }
 
   }
  
 
-  @media only screen and (max-width: 820px) {
+  @media only screen and (max-width: 860px) {
   figure {
     width: 325px;
   }
