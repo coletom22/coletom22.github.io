@@ -1,6 +1,11 @@
-  body {
-   background-color: #1a1a1a; 
-    background: radial-gradient(#353535 0%, #1a1a1a 100%);
+  
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1a1a1a; 
+    background: radial-gradient(#a0a0a0 0%, #a4a4a4 100%);
   }
   .container {
     display: flex;
@@ -11,12 +16,14 @@
     height: 75px;
     display: flex;
     align-items: center;
-    background-color: #124F0D;
     color: white;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
     position: fixed;
+    background-color: #fff;
+		border-bottom: 1px solid #ddd;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     top: 0;
     z-index: 1;
     right: 0;
@@ -27,6 +34,7 @@
   .center a {
     margin: 30px;
     font-size: 28px;
+    
   }
   .center h1 {
     font-size: 35px;
@@ -48,17 +56,20 @@
     text-align: left;
   }
   nav a, nav h1 {
-    color: white;
+    color: #124F0D;
     margin-right: 1fr;
     padding: 5px 20px ;
   }
-  nav a:hover {
-    background-color: wheat;
-    border-radius: 20px;
+  nav #current {
+    text-decoration: none;
   }
-  nav a.active {
-    color: olive;
-    background-color: white;
+  nav a:hover {
+    background-color: rgb(206, 206, 206);
+    border-radius: 10px;
+  }
+  nav #current:hover {
+    background-color: transparent;
+    border-radius: 0;
   }
   
   .div {
@@ -97,6 +108,7 @@
   }
   figure:hover {
     transform: translateY(-10px);
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
   }
   img {
     border-radius: 20px;
@@ -112,7 +124,7 @@
       left: 0;
       height: 100%;
       width: 120px;
-      background-color: #124F0D;
+      background-color: white;
       z-index: 1;
       overflow-x: hidden;
       transition: 0.5s;
@@ -131,6 +143,7 @@
       padding: 10px;
       display: block;
     }
+
   }  
 
   @media only screen and (max-width: 1052px) {
@@ -192,3 +205,79 @@
     font-size: 70px;
   }
 }
+
+.content {
+  margin-top: 15vh;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: grid;
+  grid-template-columns: 48% 50%;
+  grid-gap: 10px;
+}
+
+info {
+  margin-top: 21vh;
+  grid-column: 1;
+}
+
+info h2, info p{
+  padding: 0;
+  margin: 0;
+  margin-right: 20px;
+}
+info h2 {
+  font-size: 72px;
+  padding: 0;
+}
+
+info p {
+  font-size: 32px;
+  color: #124F0D;
+}
+
+form {
+  grid-column: 2;
+  margin: auto;
+  max-width: 500px;
+  padding: 20px;
+  margin-left: 20px;
+}
+
+label {
+  color: #2b2b2b;
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+select,
+textarea {
+  border: 1px solid #2b2b2b;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 400px;
+}
+
+input[type="submit"] {
+  background-color: #124f0d;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #0e3d0a;
+}
+
+textarea {
+  height: 100px;
+}
+
+
