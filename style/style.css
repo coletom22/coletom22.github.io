@@ -251,18 +251,7 @@ info p {
   color: #124F0D;
   
 }
-/* .fade-in {
-  opacity: 0;
-  animation: fadeIn 2s ease-in-out forwards;
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-} */
+
 .type-in p {
   border-right: .15em solid black;
   font-size: 35px;
@@ -270,7 +259,7 @@ info p {
   overflow: hidden;
 }
 .type-in p:nth-child(1) {
-  width: 550px;
+  width: 590px;
   -webkit-animation: type 2s steps(40, end);
   animation: type 2s steps(40, end);
   -webkit-animation-fill-mode: forwards;
@@ -354,66 +343,6 @@ info p {
     border-color: tranparent;
   }
 }
-/* .type-in p {
-  display: inline-block;
-}
-
-.type-in p.second-line {
-  opacity: 0;
-}
-
-.type-in p:first-child {
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 3.5s steps(40, end),
-             blink-caret .75s step-end infinite;
-}
-
-.type-in p:nth-child(2) {
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing2 3.5s steps(40, end) forwards,
-             blink-caret2 .75s step-end infinite forwards;
-  animation-delay: 3.5s;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes typing2 {
-  from {
-    width: 0;
-    opacity: 0;
-  }
-  to {
-    width: 100%;
-    opacity: 1;
-  }
-}
-
-@keyframes blink-caret {
-  from, to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: black;
-  }
-}
-
-@keyframes blink-caret2 {
-  from, to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: black;
-  }
-} */
 
 form {
   grid-column: 2;
@@ -453,4 +382,42 @@ textarea {
   height: 100px;
 }
 
+#project-1 {
+  margin-top: 30vh;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-rows: repeat(12, 50vh);
+  grid-template-columns: repeat(2, 40vw);
+  align-items: center;
+  justify-items: center;
+}
 
+.section1 p {
+  font-size: 25px;
+  grid-row: 1 span 2;
+  grid-column: 2;
+  text-align: center;
+}
+
+.section1 img {
+  grid-row: 1;
+  grid-column: 1;
+  width: 216px;
+  height: 480px;
+}
+
+.section2 p {
+  font-size: 25px;
+  grid-row: 2;
+  grid-column: 1;
+  text-align: center;
+}
+
+.section2 img {
+  grid-row: 2;
+  grid-column: 1;
+  width: 216px;
+  height: 480px;
+}
