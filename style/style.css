@@ -54,6 +54,7 @@ body {
     left: 23px;
     top: 23px;
     text-align: left;
+    margin-right: 60px;
   }
   nav a, nav h1 {
     color: #124F0D;
@@ -383,41 +384,43 @@ textarea {
 }
 
 #project-1 {
-  margin-top: 30vh;
-  margin-left: 20vw;
-  margin-right: 20vw;
+  margin: 10vh auto;
   display: grid;
   grid-gap: 10px;
-  grid-template-rows: repeat(12, 50vh);
-  grid-template-columns: repeat(2, 40vw);
+  grid-template-rows: 40vh repeat(11, 80vh);
+  grid-template-columns: 1fr;
   align-items: center;
   justify-items: center;
 }
 
-.section1 p {
+section.sec {
+  display: flex;
+  align-items: center;
+}
+section.sec p {
+  margin: 0 20px;
   font-size: 25px;
-  grid-row: 1 span 2;
-  grid-column: 2;
   text-align: center;
 }
-
-.section1 img {
-  grid-row: 1;
-  grid-column: 1;
+section.sec img{
+  border-radius: 8px;
   width: 216px;
   height: 480px;
 }
-
-.section2 p {
-  font-size: 25px;
-  grid-row: 2;
-  grid-column: 1;
-  text-align: center;
+section#sec1 {
+  display: block;
+  padding-bottom: 25px;
+  border-bottom: 1px solid black;
 }
 
-.section2 img {
-  grid-row: 2;
-  grid-column: 1;
-  width: 216px;
-  height: 480px;
+header {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+#fleet {
+  color: rgb(103, 80, 164);
+  font-size: 50px;
+  font-style: italic;
+  font-weight:900;
 }
