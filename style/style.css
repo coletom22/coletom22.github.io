@@ -387,7 +387,7 @@ textarea {
   margin: 10vh auto;
   display: grid;
   grid-gap: 10px;
-  grid-template-rows: 40vh repeat(11, 80vh);
+  grid-template-rows: 40vh 20vh 80vh 20vh repeat(3, 80vh) 20vh repeat(3, 80vh) 20vh repeat(4, 80vh) 20vh repeat(2 80vh);
   grid-template-columns: 1fr;
   align-items: center;
   justify-items: center;
@@ -398,14 +398,20 @@ section.sec {
   align-items: center;
 }
 section.sec p {
-  margin: 0 20px;
+
+  margin: 0 30px;
   font-size: 25px;
   text-align: center;
+}
+
+section.sec p em {
+  color:rgb(103, 80, 164);
 }
 section.sec img{
   border-radius: 8px;
   width: 216px;
   height: 480px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
 }
 section#sec1 {
   display: block;
@@ -413,14 +419,37 @@ section#sec1 {
   border-bottom: 1px solid black;
 }
 
+
+section#sec2 {
+  margin-top: 30px;
+  padding: 0 15vw;
+  margin-bottom: 20px;
+}
+
 header {
-  font-size: 35px;
+  font-size: 25px;
   margin-bottom: 20px;
 }
 
 #fleet {
   color: rgb(103, 80, 164);
-  font-size: 50px;
+  font-size: 42px;
   font-style: italic;
   font-weight:900;
+  text-shadow: 1px 1px 1px black;
+}
+
+#title {
+  color: rgb(103, 80, 164);
+  font-size: 30px;
+  margin-bottom: 5px;
+  text-shadow: 1px 1px 1px black;
+}
+
+hr {
+  background-color: solid black;
+  width: 60vw;
+}
+h3 {
+  margin:0;
 }
