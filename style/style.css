@@ -452,4 +452,51 @@ hr {
 }
 h3 {
   margin:0;
+} 
+#hobby-1 {
+  margin: 10vh auto;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-rows: 40vh 20vh 80vh 20vh;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+container.sec {
+  display: flex;
+  align-items: center;
+}
+container.sec p {
+
+  margin: 0 30px;
+  font-size: 25px;
+  text-align: center;
+}
+
+container.sec p em {
+  color:rgb(103, 80, 164);
+}
+container.sec img{
+  border-radius: 8px;
+  width: 20%;
+  height: 20%;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
+}
+container#sec1 {
+  display: block;
+  padding-bottom: 25px;
+  border-bottom: 1px solid black;
+}
+container#sec2 {
+  margin-top: 30px;
+  padding: 0 15vw;
+  margin-bottom: 20px;
+}
+#fishing {
+  color: #124F0D;
+  font-size: 42px;
+  font-style: italic;
+  font-weight:900;
+  text-shadow: 1px 1px 1px black;
 }
