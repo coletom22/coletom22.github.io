@@ -8,15 +8,21 @@ for (const link of links) {
   }
 }
 
-const text = "Please fill out this form and I will get back to you as soon as possible.";
-let index = 0;
+var slideIndex = 1;
+showSlides(slideIndex);
 
-function type() {
-  const typingText = document.getElementById("type-in");
-  typingText.innerHTML = text.slice(0, index++);
-  if (index <= text.length) {
-    setTimeout(type, 100);
-  }
+function plusDivs(n) {
+  showSlides(slideIndex += n);
 }
 
-type();
+function showSlides(n) {
+  console.log("showSlides function called with n =", n);
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}
