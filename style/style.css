@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
-
+/* Basic styling applicable to all pages (nav bar and fonts) */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #1a1a1a; 
@@ -82,6 +82,7 @@ nav #current:hover {
   border-radius: 0;
 }
 
+/* Styling of homepage images that are within a grid */
 .div {
   display: flex;
   width: 100%;
@@ -131,6 +132,8 @@ img#home {
   width: 100%;
 }
 
+/* Resizing of homescreen at certain pixel widths. When there are less than
+860px then the navigation bar goes vertical */
 @media only screen and (max-width: 860px) {
   nav {
     flex-direction: column;
@@ -224,6 +227,7 @@ img#home {
   }
 }
 
+/* Styling and typing effects of contacts content and form */
 .content {
   margin-top: 15vh;
   margin-left: 100px;
@@ -412,6 +416,7 @@ textarea {
   height: 100px;
 }
 
+/*Styling of projects page that utilizes a grid layout with numerous cells of different sizes */
 #project-1 {
   margin: 10vh auto;
   display: grid;
@@ -488,6 +493,7 @@ h3 {
   margin:0;
 } 
 
+/* Styling and effects of hobbies page*/
 #fishing {
   color: #124F0D;
   font-size: 42px;
@@ -608,6 +614,7 @@ header#head {
   border-bottom: 1px solid black;
 }
 
+/* Styling for the table on skills page */
 table {
   border-collapse: collapse;
   width: 100%;
