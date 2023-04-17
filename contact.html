@@ -1,79 +1,74 @@
 <!DOCTYPE html>
 <head>
-    <title>My Portfolio</title>
-    <meta charset="UTF-8">
-    <link rel = "stylesheet" href = "style/style.css">
-    <script src = "nodeJs/script.js"></script>
-    
+  <title>My Portfolio</title>
+  <meta charset="UTF-8">
+  <link rel = "stylesheet" href = "style/style.css">    
 </head>
 
 <body id="contact">
- 
-  <div class="container">
-    <nav>
-      <li class="left"><a href="index.html">Home</a></li>
-      <section class="center">
-        <a href="hobbies.html">Hobbies</a>
-        <a href="skills.html">Skills</a>
-        <h1>Cole Tom</h1>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html" id = "current">Contact</a>
-      </section>
-    </nav>
-    <div class="content">
-      <info>
-        <h2 class = "fade-in">Hello,</h2> 
-        <div class="type-in">
-          <p>Please fill out this form and I will </p>
-          <p>get back to you as soon as possible.</p>
+    <div class="container">
+        <nav>
+            <li class="left">
+                <a href="index.html">Home</a>
+            </li>
+            <section class="center">
+                <a href="hobbies.html">Hobbies</a>
+                <a href="skills.html">Skills</a>
+                <h1>Cole Tom</h1>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html" id = "current">Contact</a>
+            </section>
+        </nav>
+        <div class="content">
+            <info>
+                <h2 class = "fade-in">Hello,</h2> 
+                <div class="type-in">
+                    <p>Please fill out this form and I will </p>
+                    <p>get back to you as soon as possible.</p>
+                </div>
+                <br>
+                <br>
+                <icons>
+                    <a href = "https://github.com/coletom22" id = "git" title = "Visit my GitHub" target="_blank">
+                        <img src="images/github (1).svg" alt="Github">
+                    </a>
+                    <a href = "https://www.linkedin.com/in/cole-tom-15a33621b/" id = "linkedin" title = "View my LinkedIn Profile" target="_blank">
+                        <img src = "images/linkedin (1).svg" alt = "Linkedin">
+                    </a>
+                    <a href = "www.com" id = "resume" title = "Download a copy of my resume" target="_blank">
+                        <img src = "images/file-solid.svg" alt = "Resume">
+                    </a>
+                </icons>
+            </info>
+            <form>
+                <label for="name">
+                    Name:
+                </label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                <label for="email">
+                    Email:
+                </label>
+                <input type="text" id="email" name="email" placeholder="john@gmail.com" required>
+                <label for="phone">
+                    Phone number:
+                </label>
+                <input type="text" id="phone" name="phone" placeholder="(XXX)-XXX-XXXX" required>
+                <label for="reason">
+                    Reason for inquiry:
+                </label>
+                <select id="reason" name="reason">
+                  <option value="work">Work</option>
+                  <option value="hobbies">Hobbies</option>
+                  <option value="questions">Questions</option>
+                </select>
+                <label for="note">
+                    Note (optional):
+                </label>
+                <textarea id="note" name="note" placeholder="Your note.."></textarea>
+                <input type="submit" value="Submit">
+            </form>
+            <script src = "myscripts/script.js"></script>
         </div>
-        <br>
-        <br>
-        <icons>
-          <a href = "https://github.com/coletom22" id = "git" title = "Visit my GitHub" target="_blank">
-            <img src="images/github (1).svg" alt="Github">
-          </a>
-          <a href = "https://www.linkedin.com/in/cole-tom-15a33621b/" id = "linkedin" title = "View my LinkedIn Profile" target="_blank">
-            <img src = "images/linkedin (1).svg" alt = "Linkedin">
-          </a>
-          <a href = "www.com" id = "resume" title = "Download a copy of my resume" target="_blank">
-            <img src = "images/file-solid.svg" alt = "Resume">
-          </a>
-        </icons>
-      </info>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="John Doe" required>
-  
-        <label for="email">Email:</label>
-        <input type="text" id="email" name="email" placeholder="john@gmail.com" required>
-  
-        <label for="phone">Phone number:</label>
-        <input type="text" id="phone" name="phone" placeholder="(XXX)-XXX-XXXX" required>
-  
-        <label for="reason">Reason for inquiry:</label>
-        <select id="reason" name="reason">
-          <option value="work">Work</option>
-          <option value="hobbies">Hobbies</option>
-          <option value="questions">Questions</option>
-        </select>
-  
-        <label for="note">Note (optional):</label>
-        <textarea id="note" name="note" placeholder="Your note.."></textarea>
-  
-        <input type="submit" value="Submit">
-      </form>
-      <script>
-        // Format the phone number input to (xxx)-xxx-xxxx
-        const phoneInput = document.getElementById('phone');
-        phoneInput.addEventListener('input', function (e) {
-          const phoneNumber = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
-          e.target.value = !phoneNumber[2] ? phoneNumber[1] : `(${phoneNumber[1]})-${phoneNumber[2]}${phoneNumber[3] ? `-${phoneNumber[3]}` : ''}`;
-        });
-      </script>
     </div>
-  </div>
-
-    
 </body>
 </html>

@@ -3,35 +3,69 @@
     <title>My Portfolio</title>
     <meta charset="UTF-8">
     <link rel = "stylesheet" href = "style/style.css">
-    <script src = "nodeJs/script.js"></script>
 </head>
-
 <body>
-    <section id = "main">
-        <nav>
-          <li class="left"><a href="index.html">Home</a></li>
-          <section class="center">
+    <nav>
+        <li class="left">
+            <a href="index.html">Home</a>
+        </li>
+        <section class="center">
             <a href="hobbies.html" id = "current">Hobbies</a>
             <a href="skills.html">Skills</a>
             <h1>Cole Tom</h1>
             <a href="projects.html">Projects</a>
             <a href="contact.html">Contact</a>
-          </section>
-        </nav>
-
-        <div id = "hobby-1">
-            <container class = "sec" id = "sec1">
-                <p id = "fishing">Shore Fishing</p>
-                <p id = "date">Santa Barbara - Summer 2022</p>
-            </container>
-            <container class = "sec" id = "sec2">
-                <p>
-                    From early June to late July I spent my time fishing along the Santa Barbara shores.<br>
-                    During this time I caught many different fish of all shapes and sizes. This is a series<br>
-                    of photos representing my summer.
-                </p>
-            </container>
+        </section>
+    </nav>
+    <div id = "hobby-1">
+        <header id = "head">
+            <p id = "fishing">Shore Fishing</p>
+        </header>
+        <p id = "p-main">
+            During my free time in the summer months of 2022 I found my<br>
+            love for saltwater fishing. Below is a collection of unique 'fish' I've caught.
+        </p>
+        <p id = "description">
+            What I enjoy most about fishing is having the ability to drift off into your thoughts<br>
+            until you are suddenly snapped back into reality after the line goes tight. It is always<br>
+            amazing to see God's creation up close, rather than through the glass of a fish tank
+        </p>
+    </div>
+    <div class="slider">
+        <span id="slide-1"></span>
+        <span id="slide-2"></span>
+        <span id="slide-3"></span>
+        <span id="slide-4"></span>
+        <span id="slide-5"></span>
+        <div class="image-cont">
+            <div class="slide">
+                <img src="images/guitarFish.JPEG" id="fish" width="600" height="400">
+                <div class="caption">Guitafish - <em>Rhinobatos</em></div>
+            </div>
+            <div class="slide">
+                <img src="images/cabezon.jpg" id="fish" width="600" height="400">
+                <div class="caption">Cabezon - <em>Scorpaenichthys marmoratus</em></div>
+            </div>
+            <div class="slide">
+                <img src="images/calico.JPEG" id="fish" width="600" height="400">
+                <div class="caption">Calico Bass - <em>Paralabrax clathratus</em></div>
+            </div>
+            <div class="slide">
+                <img src="images/leopard.jpg" id="fish" width="600" height="400">
+                <div class="caption">Leopard Shark - <em>Triakis semifasciata</em></div>
+            </div>
+            <div class="slide">
+                <img src="images/starfish.jpg" id="fish" width="600" height="400">
+                <div class="caption">Starfish - <em>Asteroidea</em></div>
+            </div>
         </div>
-    </container>
+        <div class="buttons">
+            <a href="#slide-1"></a>
+            <a href="#slide-2"></a>
+            <a href="#slide-3"></a>
+            <a href="#slide-4"></a>
+            <a href="#slide-5"></a>
+        </div>
+    </div>          
 </body>
 </html>
