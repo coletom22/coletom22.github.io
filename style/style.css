@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 /* Basic styling applicable to all pages (nav bar and fonts) */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #1a1a1a; 
-    background: radial-gradient(#a0a0a0 0%, #a4a4a4 100%);
+    font-family: 'Roboto Slab', sans-serif;
+    background-color: #002200; 
+    /* background: radial-gradient(#a0a0a0 0%, #a4a4a4 100%); */
 }
 
 .container {
@@ -21,7 +22,7 @@ nav {
   font-size: 18px;
   font-weight: bold;
   position: fixed;
-  background-color: #fff;
+  background-color: #000000;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   top: 0;
@@ -63,7 +64,7 @@ li {
 }
 
 nav a, nav h1 {
-  color: #124F0D;
+  color: #FAF5E9;
   margin-right: 1fr;
   padding: 5px 20px ;
 }
@@ -111,11 +112,12 @@ figure {
 }
 
 figure p {
+  font-family: 'Lato', sans-serif; 
   position: absolute;
   top: 23%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: #FFCC00;
   text-align: center;
   font-size: 85px;
   text-shadow: 1px 5px 9px black;
@@ -250,6 +252,8 @@ info h2, info p{
 }
 
 info h2 {
+  font-family: 'Roboto Slab', sans-serif;
+  color: #FFCC00;
   font-size: 72px;
   padding: 0;
 }
@@ -274,8 +278,9 @@ icons a {
 }
 
 info p {
+  font-family: 'Lato', sans-serif;
   font-size: 32px;
-  color: #124F0D;
+  color: #FAF5E9;
   
 }
 
@@ -382,7 +387,8 @@ form {
 }
 
 label {
-  color: #2b2b2b;
+  font-family: 'Lato', sans-serif;
+  color: #FFCC00;
   display: block;
   font-size: 1.2rem;
   margin-bottom: 5px;
@@ -440,7 +446,7 @@ section.sec p {
 }
 
 section.sec p em {
-  color:rgb(103, 80, 164);
+  color:#FFCC00;
 }
 
 section.sec img{
@@ -470,7 +476,7 @@ header {
 
 #fleet {
   margin-top: 30px;
-  color: rgb(103, 80, 164);
+  color: #FFCC00;
   font-size: 42px;
   font-style: italic;
   font-weight:900;
@@ -478,7 +484,7 @@ header {
 }
 
 #title {
-  color: rgb(103, 80, 164);
+  color: #FFCC00;
   font-size: 30px;
   margin-bottom: 5px;
   text-shadow: 1px 1px 1px black;
@@ -495,7 +501,8 @@ h3 {
 
 /* Styling and effects of hobbies page*/
 #fishing {
-  color: #124F0D;
+  color: #FFCC00;
+  font-family: 'Lato', sans-serif;
   font-size: 42px;
   font-style: italic;
   font-weight:900;
