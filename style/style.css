@@ -74,15 +74,13 @@ nav #current {
 }
 
 nav a:hover {
-  background-color: rgb(206, 206, 206);
+  background-color: rgba(206, 206, 206, 0.623);
   border-radius: 10px;
 }
 
-nav #current:hover {
-  background-color: transparent;
-  border-radius: 0;
+.center img {
+  width: 50px;
 }
-
 /* Styling of homepage images that are within a grid */
 .div {
   display: flex;
@@ -91,20 +89,35 @@ nav #current:hover {
   align-content: center;
 }
 
+h1 {
+  text-align: center;
+  font-weight:100;
+  margin: 28vh 0 0 0 ;
+  color: #FFCC00;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 140px;
+}
+
+#home-description {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 45px;
+  color: #FAF5E9;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 #image-container {
   margin-left: -20px;
   display: grid;
-  margin-top: 190px;
-  grid-template-columns: repeat(2, 200px);
-  grid-template-rows: repeat(2, 100px);
-  grid-row-gap: 240px;
-  grid-column-gap: 340px;
+  margin-top: 22vh;
+  grid-template-columns: repeat(4, 15vw);
+  grid-column-gap: 8vw;
   align-items: center;
   justify-items: center;
 }
 
 figure {
-  width: 450px;
+  width: 15vw;
   border-radius: 20px;
   margin: 0;
   position: relative;
@@ -114,12 +127,12 @@ figure {
 figure p {
   font-family: 'Lato', sans-serif; 
   position: absolute;
-  top: 23%;
+  top: 40%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  color: #FFCC00;
+  transform: translate(-50%, -100%);
+  color: #FAF5E9;
   text-align: center;
-  font-size: 85px;
+  font-size: 3vw;
   text-shadow: 1px 5px 9px black;
 }
 
@@ -167,35 +180,23 @@ img#home {
     padding: 10px;
     display: block;
   }
+  h1 {
+    opacity: 1;
+    margin: 0;
+  }
+  figure {
+    margin-top: 0;
+  }
+
+  h1 {
+    display: none;
+  }
+
+  #home-description {
+    display: none;
+  }
 
 }  
-
-@media only screen and (max-width: 1052px) {
-  .center a {
-    font-size: 23px;
-    margin: 20px;
-  }
-  .center h1 {
-    font-size: 26px;
-  }
-  
-  figure {
-    width: 400px;
-  }
-  figure p {
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-    font-size: 68px;
-  }
-  #image-container {
-    grid-column-gap: 250px;
-    grid-row-gap: 200px;
-  }
-  
-}
 
   @media only screen and (max-width: 860px) {
     #image-container {
