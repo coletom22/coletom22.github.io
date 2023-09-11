@@ -109,7 +109,7 @@ h1 {
 #image-container {
   margin-left: -20px;
   display: grid;
-  margin-top: 22vh;
+  margin-top: 18vh;
   grid-template-columns: repeat(4, 15vw);
   grid-column-gap: 8vw;
   align-items: center;
@@ -195,6 +195,7 @@ img#home {
   #home-description {
     display: none;
   }
+
 
 }  
 
@@ -287,14 +288,14 @@ info p {
 }
 
 .type-in p {
-  border-right: .15em solid black;
+  border-right: .15em solid white;
   font-size: 35px;
   white-space: nowrap;
   overflow: hidden;
 }
 
 .type-in p:nth-child(1) {
-  width: 590px;
+  width: 560px;
   -webkit-animation: type 2s steps(40, end);
   animation: type 2s steps(40, end);
   -webkit-animation-fill-mode: forwards;
@@ -302,7 +303,7 @@ info p {
 }
 
 .type-in p:nth-child(2) {
-  width: 590px;
+  width: 560px;
   opacity: 0;
   -webkit-animation: type2 2s steps(40, end);
   animation: type2 2s steps(40, end);
@@ -317,7 +318,7 @@ info p {
     width: 0;
   }
   99.9% {
-    border-right: .15em solid black;
+    border-right: .15em solid white;
   }
   100% {
     border: none;
@@ -329,7 +330,7 @@ info p {
     width: 0;
   }
   99.9% {
-    border-right: .15em solid black;
+    border-right: .15em solid white;
   }
   100% {
     border: none;
@@ -385,7 +386,7 @@ form {
   margin: auto;
   max-width: 500px;
   padding: 20px;
-  margin-left: 70px;
+  margin-left: 80px;
 }
 
 label {
@@ -423,7 +424,122 @@ input[type="submit"]:hover {
 textarea {
   height: 100px;
 }
+@media only screen and (max-width: 860px) {
+  div.content {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  form {
+    margin-left: 1vw;
+  }
+  input[type="text"], select, textarea {
+    width: 65vw;
+  }
+  info {
+    margin: 0 0 0 9vw;
+  }
+  info h2 {
+    font-size: 50px;
+  }
+  #type-in {
+    font-size: 20px;
+  }
 
+  .type-in p {
+    border-right: .15em solid white;
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .type-in p:nth-child(1) {
+    width: 300px;
+    -webkit-animation: type 2s steps(40, end);
+    animation: type 2s steps(40, end);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  
+  .type-in p:nth-child(2) {
+    width: 310px;
+    opacity: 0;
+    -webkit-animation: type2 2s steps(40, end);
+    animation: type2 2s steps(40, end);
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes type {
+    0% {
+      width: 0;
+    }
+    99.9% {
+      border-right: .15em solid white;
+    }
+    100% {
+      border: none;
+    }
+  }
+  
+  @-webkit-keyframes type {
+    0% {
+      width: 0;
+    }
+    99.9% {
+      border-right: .15em solid white;
+    }
+    100% {
+      border: none;
+    }
+  }
+  
+  @keyframes type2 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    99.9% {
+      border-right: .15em solid black;
+    }
+    100% {
+      opacity: 1;
+      border: none;
+    }
+  }
+  
+  @-webkit-keyframes type2 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    99.9% {
+      border-right: .15em solid black;
+    }
+    100% {
+      opacity: 1;
+      border: none;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  @-webkit-keyframes blink {
+    50% {
+      border-color: tranparent;
+    }
+  }
+}
 /*Styling of projects page that utilizes a grid layout with numerous cells of different sizes */
 #project-1 {
   margin: 10vh auto;
