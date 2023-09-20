@@ -14,7 +14,7 @@ body {
 
 nav {
   flex-grow: 0;
-  height: 75px;
+  height: 50px;
   display: flex;
   align-items: center;
   color: white;
@@ -34,7 +34,7 @@ nav {
 }
 
 .center a {
-  margin: 30px;
+  margin: 0 3vw;
   font-size: 28px;  
 }
 
@@ -58,7 +58,7 @@ li {
   list-style: none;
   position: absolute;
   left: 23px;
-  top: 23px;
+  top: 13px;
   text-align: left;
   margin-right: 60px;
 }
@@ -79,7 +79,7 @@ nav a:hover {
 }
 
 .center img {
-  width: 50px;
+  width: 35px;
 }
 /* Styling of homepage images that are within a grid */
 .div {
@@ -172,6 +172,7 @@ img#home {
   }
   .center a {
     font-size: 23px;
+    margin: 40px;
   }
   .center h1 {
     font-size: 26px;
@@ -540,82 +541,86 @@ textarea {
     }
   }
 }
-/*Styling of projects page that utilizes a grid layout with numerous cells of different sizes */
-#project-1 {
-  margin: 10vh auto;
-  display: grid;
-  grid-gap: 10px;
-  grid-template-rows: 40vh 20vh 80vh 20vh repeat(3, 80vh) 20vh repeat(3, 80vh) 20vh repeat(4, 80vh) 20vh repeat(2 80vh);
-  grid-template-columns: 1fr;
-  align-items: center;
-  justify-items: center;
-}
-
-section.sec {
+/*Styling of projects page*/
+.fleet {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
 }
 
-section.sec p {
+.description-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 120px;
+}
 
-  margin: 0 30px;
-  font-size: 25px;
+.description {
+  width: 50vw;
+  min-width: 20vw;
+  position: absolute;
+  opacity: 0;
+  margin-bottom: 20px;
+  color: #FAF5E9;
   text-align: center;
 }
 
-section.sec p em {
-  color:#FFCC00;
+.description em {
+  color: #FFCC00;
 }
 
-section.sec img{
+.carousel-wrapper {
+  border-radius: 35px;
+  background-color: #FAF5E9;
+  width: 675px;
+  height: 570px;
   border: 1px solid black;
-  border-radius: 8px;
-  width: 216px;
-  height: 480px;
-  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  
 }
 
-section#sec1 {
-  display: block;
-  padding-bottom: 25px;
-  border-bottom: 1px solid black;
+.carousel-container {
+  display: flex;
+  width: 30%;
+  margin: -30px auto;
+  transition: transform .5s;
 }
 
-section#sec2 {
-  margin-top: 30px;
-  padding: 0 15vw;
-  margin-bottom: 20px;
+.card {
+  flex: 0 0 200px;
+  margin: 10px 25px;
+  width: 250px;
+  border-radius: 5px;
+  background-color: transparent;
+  transition: flex-basis;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
 }
 
-header {
-  font-size: 25px;
-  margin-bottom: 20px;
+.project-image {
+  border: 1px solid black;
+  border-radius: 7px;
+  width: 80%;
+  height: 80%;
+  box-shadow: 4px 6px 3px rgba(0,0,0,.6);
 }
 
-#fleet {
-  margin-top: 30px;
-  color: #FFCC00;
-  font-size: 42px;
-  font-style: italic;
-  font-weight:900;
-  text-shadow: 1px 1px 1px black;
+.indexButton {
+  background-color: #FAF5E9;
+  font-size: 40px;
+  border-radius: 90px;
+  margin: 0 20px;
+  width: 45px;
+  color: #011301;
 }
 
-#title {
-  color: #FFCC00;
-  font-size: 30px;
-  margin-bottom: 5px;
-  text-shadow: 1px 1px 1px black;
-}
 
-hr {
-  background-color: solid black;
-  width: 60vw;
-}
-
-h3 {
-  margin:0;
-} 
 
 /* Styling and effects of hobbies page*/
 #fishing {
