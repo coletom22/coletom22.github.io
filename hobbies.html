@@ -2,6 +2,7 @@
 <head>
     <title>My Portfolio</title>
     <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/4249e5f674.js" crossorigin="anonymous"></script>
     <link rel = "stylesheet" href = "style/style.css">
 </head>
 <body>
@@ -16,55 +17,46 @@
             <a href="contact.html"><img src="images/contactIcon.svg" alt = "Contact"></a>
         </section>
     </nav>
-    <div id = "hobby-1">
-        <header id = "head">
-            <p id = "fishing">Shore Fishing</p>
-        </header>
-        <p id = "p-main">
-            During my free time in the summer months of 2022 I found my<br>
-            love for saltwater fishing. Below is a collection of unique 'fish' I've caught.
-        </p>
-        <p id = "description">
-            What I enjoy most about fishing is having the ability to drift off into your thoughts<br>
-            until you are suddenly snapped back into reality after the line goes tight. It is always<br>
-            amazing to see God's creation up close, rather than through the glass of a fish tank
-        </p>
+    <div id = "one">
+        <h2>Fishing in Santa Barbara</h2>
+        <div id = "title-frame">
+            <div id = "hobby-desc">
+                <p>My favorite summer time hobby is shore fishing, particularly in the Santa Barbara area.</p>
+                <p>This is a logbook of some of my best catches!</p>
+            </div>
+            <div class = "fish-types-container">
+                <h3 id = "caught-title">Caught</h3>
+                <div class = "caught">
+                    <p>Cabezon</p>
+                    <p>Calico Seabass</p>
+                    <p>Guitar Fish</p>
+                    <p>Mackeral</p>
+                    <p>Smelt</p>
+                    <p>Surfperch</p>
+                    <p>Octopus</p>
+                    <p>Halibut</p>
+                    <p>Lizard Fish</p>
+                    <p>Leopard Shark</p>
+                    <p>Spider Crab</p>
+                </div>
+                <h3 id = "bucketlist-title">Bucketlist</h3>
+                <div class = "bucketlist">
+                    <p>Lingcod</p>
+                    <p>Black Rockfish</p>
+                    <p>Vermillion</p>
+                    <p>China Rockfish</p>
+                    <p>Salmon</p>
+                    <p>Corbina</p>
+                    <p>Halibut 22+ inch</p>
+                </div>
+            </div>
+        </div>
+        <i class="fa-solid fa-arrow-down fa-bounce"></i>
     </div>
-    <div class="slider">
-        <span id="slide-1"></span>
-        <span id="slide-2"></span>
-        <span id="slide-3"></span>
-        <span id="slide-4"></span>
-        <span id="slide-5"></span>
-        <div class="image-cont">
-            <div class="slide">
-                <img src="images/guitarFish.JPEG" id="fish" width="600" height="400">
-                <div class="caption">Guitarfish - <em>Rhinobatos</em></div>
-            </div>
-            <div class="slide">
-                <img src="images/cabezon.jpg" id="fish" width="600" height="400">
-                <div class="caption">Cabezon - <em>Scorpaenichthys marmoratus</em></div>
-            </div>
-            <div class="slide">
-                <img src="images/calico.JPEG" id="fish" width="600" height="400">
-                <div class="caption">Calico Bass - <em>Paralabrax clathratus</em></div>
-            </div>
-            <div class="slide">
-                <img src="images/leopard.jpg" id="fish" width="600" height="400">
-                <div class="caption">Leopard Shark - <em>Triakis semifasciata</em></div>
-            </div>
-            <div class="slide">
-                <img src="images/starfish.jpg" id="fish" width="600" height="400">
-                <div class="caption">Starfish - <em>Asteroidea</em></div>
-            </div>
-        </div>
-        <div class="buttons">
-            <a href="#slide-1"></a>
-            <a href="#slide-2"></a>
-            <a href="#slide-3"></a>
-            <a href="#slide-4"></a>
-            <a href="#slide-5"></a>
-        </div>
-    </div>          
+    <div id = "two">
+        <p class = "fade-in">Guitar Fish</p>
+        <img class = "fade-in" src = "images/guitarFish.JPEG">
+    </div>
+    <script src ="myscripts/hobbyTransition.js"></script>
 </body>
 </html>
