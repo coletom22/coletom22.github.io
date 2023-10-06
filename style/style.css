@@ -656,7 +656,7 @@ textarea {
 }
 
 #hobby-desc {
-  font-size: 3.5vh;
+  font-size: clamp(5px, 1.7vw, 1.7vw);
   color: #FAF5E9;
   align-self: center;
   margin-left: 4vw;
@@ -719,24 +719,53 @@ textarea {
   position: absolute;
   bottom: clamp(10px, 3vh, 3vh);
 }
-#frame-two {
+.fish-frame {
   margin: 0;
   padding: 0;
-  height: 90vh;
+  height: 100vh;
   width: 100%;
-  background-color: #FAF5E9;
   display: grid;
-  grid-template-rows: 15vh auto;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: 12vh 70vh;
+  grid-template-columns: repeat(2,1fr);
+  row-gap: 4vh;
+}
+
+.fish-frame:nth-child(odd) {
+  background-color: #FAF5E9;
+}
+.fish-frame:nth-child(even) {
+  background-color: #122212;
+  color: #FAF5E9;
 }
 img.fade-in {
   height: 24vw;
   width: 36vw;
 }
-#frame-two p {
+
+#fish-img-container {
+  justify-self: center;
+  align-self: center;
+}
+ul {
+  align-self: center;
+  padding: 5vw;
+}
+
+ul li h4 {
+  margin: 0 0 3px 0;
+}
+
+ul li h4 p {
+  margin: 0px;
+  padding: 0px;
+}
+.fish-frame h3 {
+  font-weight:100;
   grid-column: 1 / -1;
   font-size: clamp(50px,4vw,3vw);
   text-align: center;
+  margin: 5vh 0 0 0;
+  padding: 0;
 }
 .fade-in {
   opacity: 0;
