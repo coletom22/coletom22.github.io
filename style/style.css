@@ -3,7 +3,7 @@
 /* Basic styling applicable to all pages (nav bar and fonts) */
 body {
     font-family: 'Roboto Slab', sans-serif;
-    background-color: #011301; 
+    background-color: #122212; 
     /* background: radial-gradient(#a0a0a0 0%, #a4a4a4 100%); */
 }
 
@@ -22,7 +22,7 @@ nav {
   font-size: 18px;
   font-weight: bold;
   position: fixed;
-  background-color: #000000;
+  background-color: #161616;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   top: 0;
@@ -573,7 +573,7 @@ textarea {
 }
 
 .carousel-wrapper {
-  border-radius: 35px;
+  border-radius: 5px;
   background-color: #FAF5E9;
   width: 675px;
   height: 570px;
@@ -612,138 +612,139 @@ textarea {
 }
 
 .indexButton {
-  background-color: #FAF5E9;
   font-size: 40px;
-  border-radius: 90px;
+  background-color: transparent;
   margin: 0 20px;
   width: 45px;
-  color: #011301;
+  border: transparent;
+}
+
+.indexButton i {
+  color: #faf5e9;
+  height: 40px;
 }
 
 
 
 /* Styling and effects of hobbies page*/
-#fishing {
-  color: #FFCC00;
-  font-family: 'Lato', sans-serif;
-  font-size: 42px;
-  font-style: italic;
-  font-weight:900;
-  text-shadow: 1px 1px 1px black;
+
+#one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0;
-}
-
-.slider {
-  width: 600px;
-  height: 400px;
-  background-color: yellow;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  text-align: center;
-  overflow: hidden;
-}
-
-.image-cont {
-  width: 3000px;
-  background-color: #a4a4a4;
-  height: 400px;
-  clear: both;
-  position: relative;
-  -webkit-transition: left 2s;
-  -moz-transition: left 2s;
-  -o-transition: left 2s;
-  transition: left 2s;
-}
-
-img#fish {
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.1);
-  width: 600px;
-  height: 400px;
-}
-
-.slide {
-  float: left;
-  margin: 0px;
-  padding: 0px;
-  position: relative;
-}
-
-#slide-1:target ~ .image-cont {
-  left: 0px;
-}
-
-#slide-2:target ~ .image-cont {
-  left: -600px;
-}
-
-#slide-3:target ~ .image-cont {
-  left: -1200px;
-}
-
-#slide-4:target ~ .image-cont {
-  left: -1800px;
-}
-
-#slide-5:target ~ .image-cont {
-  left: -2400px;
-}
-
-.buttons {
-  position: relative;
-  top: -20px;
-}
-
-.buttons a {
-  display: inline-block;
-  height: 15px;
-  width: 15px;
-  border-radius: 50px;
-  background-color: white;
-}
-
-.caption {
-  background-color: none;
-  color: white;
-  font-size: 25px;
-  text-align: center;
-  position: absolute;
-  top: 0;
-  left: 0;
+  margin-top: 60px;
+  padding: 0;
+  height: 90vh;
   width: 100%;
-  padding: 10px;
-  text-shadow: 1px 1px 1px black;
+  background-color: #122212;
 }
 
-div#hobby-1 {
-  
-  text-align:center;
+#title-frame {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-p#date {
+.fish-types-container {
+  margin-right: 20px;
+  margin-left: 30px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: auto auto;
+  column-gap: 90px;
+  row-gap: 0px;
+}
+
+#hobby-desc {
   font-size: 30px;
+  color: #FAF5E9;
+  align-self: center;
+  margin-left: 60px;
+  margin-right: 60px;
+  text-align: center;
+}
+
+
+.caught, .bucketlist {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  row-gap: 10px;
+}
+
+
+#caught-title, #bucketlist-title {
+  align-self: center;
+  justify-self: center;
+  color: #FAF5E9;
+  font-size: 40px;
+}
+
+.caught p, .bucketlist p{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: bold;
+  width: 70px;
+  height: 25px;
+  background-color: #faf5e9;
+  padding: 20px;
+  border: 1px solid black;
+  box-shadow: 0 4px 10px rgb(0, 0, 0); 
   margin: 0;
 }
-
-p#p-main{
-  font-size: 23px;
-  margin-bottom: 20px;
+.caught {
+  grid-column: 1;
+  grid-row: 2;
 }
 
-p#description {
-  font-size: 18px;
-  margin:0;
+.bucketlist {
+  grid-column: 2;
+  grid-row: 2;
 }
-header#head {
-  margin: 0 auto;
-  width: 30vw;
-  margin-top: 80px;
-  display: block;
-  padding-bottom: 25px;
-  border-bottom: 1px solid black;
+#one h2 {
+  font-size: 60px;
+  text-align: center;
+  color: #FAF5E9;
+}
+#one i{
+  color: #FAF5E9;
+  font-size: 40px;
+  position: absolute;
+  bottom: 40px;
+}
+#two {
+  margin: 0;
+  padding: 0;
+  height: 90vh;
+  width: 100%;
+  background-color: #FAF5E9;
+  display: grid;
+  grid-template-rows: 170px auto;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+img.fade-in {
+  height: 24vw;
+  width: 36vw;
+}
+#two p {
+  grid-column: 1 / -1;
+  font-size: 50px;
+  text-align: center;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease, transform 1s ease;
 }
 
+.fade-in.active {
+  opacity: 1;
+  transform: translateY(0px);
+}
 /* Styling for the table on skills page */
 table {
   border-collapse: collapse;
