@@ -3,7 +3,7 @@
 /* Basic styling applicable to all pages (nav bar and fonts) */
 body {
     font-family: 'Roboto Slab', sans-serif;
-    background-color: #122212; 
+    background-color: #1a311a; 
     /* background: radial-gradient(#a0a0a0 0%, #a4a4a4 100%); */
 }
 
@@ -635,24 +635,46 @@ textarea {
   margin: 0;
   margin-top: 10vh;
   padding: 0;
-  height: 90vh;
+  height: 95vh;
   width: 100%;
-  background-color: #122212;
+  background-color: #1a311a;
+}
+@media only screen and (max-width: 1325px) {
+  ul li p {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 1125px) {
+
+}
+#hobby-title {
+  font-size: 8vh;
+  color: #FAF5E9;
+  margin: 0 0 1vh 0;
+  padding: 0;
+  font-weight: bold;
 }
 
 #title-frame {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 40vw 48vw;
 }
 
 .fish-types-container {
   margin-right: 2vw;
-  margin-left: 3vw;
+  margin-left: 6vw;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2,20vw);
   grid-template-rows: repeat(2, 10vh);
-  column-gap:5em;
+  column-gap: 7vh;
   row-gap: 0px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .fish-types-container {
+    margin-left: 1vw;
+  }
 }
 
 #hobby-desc {
@@ -672,8 +694,9 @@ textarea {
 .caught, .bucketlist {
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3,7.5vw);
   gap: 1vw;
+  column-gap: 0;
 }
 
 
@@ -689,10 +712,10 @@ textarea {
   text-align: center;
   align-items: center;
   justify-content: center;
-  font-size: clamp(15px,.9vw,0.8vw);
+  font-size: clamp(13px,.9vw,0.8vw);
   font-weight: bold;
-  width: 3.4vw;
-  height: 1.5vh;
+  width: 2.3vw;
+  height: .4vw;
   background-color: #faf5e9;
   padding: clamp(24px, 1.4vw,1.4vw);
   border: 1px solid black;
@@ -717,7 +740,7 @@ textarea {
   color: #FAF5E9;
   font-size: clamp(30px,2.5vw,2.5vw);
   position: absolute;
-  bottom: clamp(10px, 3vh, 3vh);
+  bottom: 5px;
 }
 .fish-frame {
   margin: 0;
@@ -753,6 +776,7 @@ ul {
 
 ul li h4 {
   margin: 0 0 3px 0;
+  font-size: 18px;
 }
 
 ul li h4 p {
