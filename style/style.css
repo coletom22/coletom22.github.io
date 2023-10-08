@@ -3,7 +3,7 @@
 /* Basic styling applicable to all pages (nav bar and fonts) */
 body {
     font-family: 'Roboto Slab', sans-serif;
-    background-color: #1a311a; 
+    background-color: #172c17; 
     /* background: radial-gradient(#a0a0a0 0%, #a4a4a4 100%); */
 }
 
@@ -637,7 +637,7 @@ textarea {
   padding: 0;
   height: 95vh;
   width: 100%;
-  background-color: #1a311a;
+  background-color: #172c17;
 }
 @media only screen and (max-width: 1325px) {
   ul li p {
@@ -756,9 +756,15 @@ textarea {
 .fish-frame:nth-child(odd) {
   background-color: #FAF5E9;
 }
+.fish-frame:nth-child(odd) ul {
+  margin-right: 4vw;
+}
 .fish-frame:nth-child(even) {
-  background-color: #122212;
+  background-color: #172c17;
   color: #FAF5E9;
+}
+.fish-frame:nth-child(even) ul {
+  margin-left: 4vw;
 }
 img.fade-in {
   height: 24vw;
