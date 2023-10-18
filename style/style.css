@@ -295,7 +295,7 @@ info p {
 }
 
 .type-in p {
-  border-right: .15em solid white;
+  border-right: .15em solid #FAF5E9;
   font-size: 35px;
   white-space: nowrap;
   overflow: hidden;
@@ -325,7 +325,7 @@ info p {
     width: 0;
   }
   99.9% {
-    border-right: .15em solid white;
+    border-right: .15em solid #FAF5E9;
   }
   100% {
     border: none;
@@ -337,7 +337,7 @@ info p {
     width: 0;
   }
   99.9% {
-    border-right: .15em solid white;
+    border-right: .15em solid #FAF5E9;
   }
   100% {
     border: none;
@@ -352,7 +352,7 @@ info p {
     opacity: 1;
   }
   99.9% {
-    border-right: .15em solid white;
+    border-right: .15em solid #FAF5E9;
   }
   100% {
     opacity: 1;
@@ -368,7 +368,7 @@ info p {
     opacity: 1;
   }
   99.9% {
-    border-right: .15em solid white
+    border-right: .15em solid #FAF5E9;
   }
   100% {
     opacity: 1;
@@ -706,7 +706,7 @@ textarea {
 #hobby-title {
   font-size: 8vh;
   color: #1f3b1f;
-  margin: 0 0 1vh 0;
+  margin: 25px 0 1vh 0;
   padding: 0;
   font-weight: bold;
 }

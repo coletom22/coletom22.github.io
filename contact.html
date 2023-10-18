@@ -40,7 +40,7 @@
                     </a>
                 </icons>
             </info>
-            <form>
+            <form action = "https://formspree.io/f/xknlklol" method = "POST" id = "contactForm">
                 <label for="name">
                     Name:
                 </label>
@@ -67,6 +67,11 @@
                 <textarea id="note" name="note" placeholder="Your note.."></textarea>
                 <input type="submit" value="Submit">
             </form>
+            <script>
+                window.onload = function() {
+                    document.getElementById("contactForm").reset();
+                };
+            </script>
             <script src = "myscripts/phoneFormat.js"></script>
         </div>
     </div>
