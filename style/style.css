@@ -3,7 +3,8 @@
 /* Basic styling applicable to all pages (nav bar and fonts) */
 body {
     font-family: 'Roboto Slab', sans-serif;
-    background-color: #172c17; 
+    /*background-color: #172c17; */
+    background-color: #FAF5E9; 
     /* background: radial-gradient(#a0a0a0 0%, #a4a4a4 100%); */
 }
 
@@ -14,7 +15,7 @@ body {
 
 nav {
   flex-grow: 0;
-  height: 50px;
+  height: 70px;
   display: flex;
   align-items: center;
   color: white;
@@ -23,14 +24,13 @@ nav {
   font-weight: bold;
   position: fixed;
   background-color: #161616;
-  border-bottom: 1px solid #ddd;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   top: 0;
   z-index: 1;
   right: 0;
   left: 0;
-  justify-content: center;
-  align-content: center;
+  justify-content: left;
+
 }
 
 .center a {
@@ -55,27 +55,34 @@ li {
 }
 
 .left {
-  list-style: none;
   position: absolute;
-  left: 23px;
-  top: 13px;
-  text-align: left;
-  margin-right: 60px;
+  left: 28px;
+  top: 23px;
 }
 
-nav a, nav h1 {
+.left a {
+  padding: 23px;
+}
+.page-titles {
+  margin: 0;
+  padding: 0;
+}
+.page-titles a {
+  text-decoration: none;
   color: #FAF5E9;
-  margin-right: 1fr;
-  padding: 5px 20px ;
+  font-size: 30px;
+  padding: 15px 20px;
 }
 
+.page-titles a:nth-child(1) {
+  margin-left: 150px;
+}
 nav #current {
   text-decoration: none;
 }
 
 nav a:hover {
   background-color: rgba(206, 206, 206, 0.623);
-  border-radius: 10px;
 }
 
 .center img {
@@ -93,7 +100,7 @@ h1 {
   text-align: center;
   font-weight:100;
   margin: 24vh 0 0 0 ;
-  color: #FFCC00;
+  color: #ddb821;
   font-family: "Roboto Slab", sans-serif;
   font-size: 130px;
 }
@@ -102,9 +109,10 @@ h1 {
   text-align: center;
   font-family: "Lato", sans-serif;
   font-size: 45px;
-  color: #FAF5E9;
+  color: #1f3b1f;
   margin-top: 0px;
   margin-bottom: 0px;
+  font-weight: bold;
 }
 #image-container {
   margin-left: -20px;
@@ -257,7 +265,7 @@ info h2, info p{
 
 info h2 {
   font-family: 'Roboto Slab', sans-serif;
-  color: #FFCC00;
+  color: #1f3b1f;
   font-size: 72px;
   padding: 0;
 }
@@ -266,25 +274,23 @@ info icons {
   display: flex;
 }
 
-info icons a img {
-  width: 70px;
-  height: 50px;
+info icons a i {
   padding: none;
   border: none;
 }
 
-info icons a img:hover {
+info icons a i:hover {
   transform: translateY(-10px);
 }
 
 icons a {
-  margin-right: 20px
+  margin-right: 20px;
 }
 
 info p {
   font-family: 'Lato', sans-serif;
   font-size: 32px;
-  color: #FAF5E9;
+  color: #1f3b1f;
   
 }
 
@@ -298,7 +304,7 @@ info p {
 .type-in p:nth-child(1) {
   width: 560px;
   -webkit-animation: type 2s steps(40, end);
-  animation: type 2s steps(40, end);
+  animation: type 1.5s steps(40, end);
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
@@ -306,10 +312,10 @@ info p {
 .type-in p:nth-child(2) {
   width: 560px;
   opacity: 0;
-  -webkit-animation: type2 2s steps(40, end);
-  animation: type2 2s steps(40, end);
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
+  -webkit-animation: type2 1.5s steps(40, end);
+  animation: type2 1.5s steps(40, end);
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.5s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
@@ -346,7 +352,7 @@ info p {
     opacity: 1;
   }
   99.9% {
-    border-right: .15em solid black;
+    border-right: .15em solid white;
   }
   100% {
     opacity: 1;
@@ -362,7 +368,7 @@ info p {
     opacity: 1;
   }
   99.9% {
-    border-right: .15em solid black;
+    border-right: .15em solid white
   }
   100% {
     opacity: 1;
@@ -392,7 +398,7 @@ form {
 
 label {
   font-family: 'Lato', sans-serif;
-  color: #FFCC00;
+  color: #1f3b1f;
   display: block;
   font-size: 1.2rem;
   margin-bottom: 5px;
@@ -409,7 +415,7 @@ input[type="text"], select, textarea {
 }
 
 input[type="submit"] {
-  background-color: #124f0d;
+  background-color: #ddb821;
   border: none;
   border-radius: 4px;
   color: #fff;
@@ -419,7 +425,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #0e3d0a;
+  background-color: #1f3b1f;
 }
 
 textarea {
@@ -559,17 +565,18 @@ textarea {
 }
 
 .description {
-  width: 50vw;
+  width: 60vw;
   min-width: 20vw;
   position: absolute;
   opacity: 0;
-  margin-bottom: 20px;
-  color: #FAF5E9;
+  margin: 0;
+  color: #1f3b1f;
   text-align: center;
+  font-weight: bold;
 }
 
 .description em {
-  color: #FFCC00;
+  color: #ddb821;
 }
 
 .carousel-wrapper {
@@ -577,9 +584,7 @@ textarea {
   background-color: #FAF5E9;
   width: 675px;
   height: 570px;
-  border: 1px solid black;
   overflow: hidden;
-  
 }
 
 .carousel-container {
@@ -620,7 +625,7 @@ textarea {
 }
 
 .indexButton i {
-  color: #faf5e9;
+  color: #1f3b1f;
   height: 40px;
 }
 
@@ -637,7 +642,7 @@ textarea {
   padding: 0;
   height: 95vh;
   width: 100%;
-  background-color: #172c17;
+  background-color: #FAF5E9;
 }
 @media only screen and (max-width: 1325px) {
   ul li p {
@@ -650,7 +655,7 @@ textarea {
 }
 #hobby-title {
   font-size: 8vh;
-  color: #FAF5E9;
+  color: #1f3b1f;
   margin: 0 0 1vh 0;
   padding: 0;
   font-weight: bold;
@@ -686,7 +691,7 @@ textarea {
   margin-top: 8vh;
   padding: 25px;
   text-align: center;
-  background-color: #459069;
+  background-color: #1f3b1f;
   box-shadow: 0 2px 7px rgb(0, 0, 0); 
 }
 
@@ -703,7 +708,7 @@ textarea {
 #caught-title, #bucketlist-title {
   align-self: center;
   justify-self: center;
-  color: #FAF5E9;
+  color: #1f3b1f;
   font-size: clamp(25px,2vw,2vw);
 }
 
@@ -734,10 +739,10 @@ textarea {
 #frame-1 h2 {
   font-size: clamp(40px, 3.3vw, 3.3vw);
   text-align: center;
-  color: #FAF5E9;
+  color: #1f3b1f;
 }
 #frame-1 i{
-  color: #FAF5E9;
+  color: #1f3b1f;
   font-size: clamp(30px,2.5vw,2.5vw);
   position: absolute;
   bottom: 5px;
@@ -754,14 +759,17 @@ textarea {
 }
 
 .fish-frame:nth-child(odd) {
-  background-color: #FAF5E9;
+  background-color: #1f3b1f;
+}
+.fish-frame:nth-child(odd) h3 {
+  color: #FAF5E9;
 }
 .fish-frame:nth-child(odd) ul {
   margin-right: 4vw;
+  color: #FAF5E9;
 }
 .fish-frame:nth-child(even) {
-  background-color: #172c17;
-  color: #FAF5E9;
+  background-color: #FAF5E9;
 }
 .fish-frame:nth-child(even) ul {
   margin-left: 4vw;
