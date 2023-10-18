@@ -548,20 +548,27 @@ textarea {
   }
 }
 /*Styling of projects page*/
+
+.project-title {
+  font-size: 30px;
+  color: #1f3b1f;
+}
 .fleet {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: clamp(76px, 20vh, 13vh);
 }
-
+.carousel-buttons {
+  display: flex;
+  flex-direction: row;
+}
 .description-container {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
-  margin-top: 120px;
 }
 
 .description {
@@ -573,6 +580,7 @@ textarea {
   color: #1f3b1f;
   text-align: center;
   font-weight: bold;
+  margin-top: 100px;
 }
 
 .description em {
@@ -605,11 +613,10 @@ textarea {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 40px;
+  padding: 32px 40px 40px 40px;
 }
 
 .project-image {
-  border: 1px solid black;
   border-radius: 7px;
   width: 80%;
   height: 80%;
@@ -629,8 +636,51 @@ textarea {
   height: 40px;
 }
 
+.fleet-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
 
+.fleet-info p {
+  color: #1f3b1f;
+  font-size: 20px;
+}
 
+.fleet-info i {
+  padding: 10px;
+}
+
+.project-description {
+  text-align: center;
+  display: none;
+  height: 250px;
+  width: 500px;
+  position: absolute;
+  top: 70vh;
+  background-color: #1f3b1f;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+  z-index: 1;
+}
+
+.project-description p {
+  color: #FAF5E9;
+}
+
+.hover-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+}
+.hover-icon:hover .project-description {
+  display: block;
+}
 /* Styling and effects of hobbies page*/
 
 #frame-1 {
