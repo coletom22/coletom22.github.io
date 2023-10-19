@@ -867,8 +867,28 @@ ul li h4 p {
 }
 /* Styling for the table on skills page */
 
+.skills-wrapper {
+  position: relative;
+}
+
+.desc-box {
+  text-align: center;
+  position: absolute;
+  top: 50%; /* Adjust as needed */
+  left: 74vw; /* Adjust as needed */
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent background */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  font-size: 20px;
+  z-index: -1;
+}
+
 .skills-grid {
+  height: 80vh;
   justify-content: center;
+  align-content: center;
   display: grid;
   grid-template-columns: repeat(3, 200px);
   row-gap: 50px;
@@ -889,11 +909,6 @@ ul li h4 p {
   opacity: 0; /* Initially set opacity to 0 */
 }
 
-
-#card1 {
-  animation: fadeInUp 0.5s ease-in-out forwards;
-  animation-delay: .2s;
-}
 
 @keyframes fadeInUp {
   from {
