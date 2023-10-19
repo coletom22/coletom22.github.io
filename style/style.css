@@ -866,6 +866,129 @@ ul li h4 p {
   transform: translateY(0px);
 }
 /* Styling for the table on skills page */
+
+.skills-grid {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  row-gap: 50px;
+  margin-top: 100px;
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  padding: 0;
+  border-radius: 3px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+  opacity: 0; /* Initially set opacity to 0 */
+}
+
+
+#card1 {
+  animation: fadeInUp 0.5s ease-in-out forwards;
+  animation-delay: .2s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.skill-card:hover{
+  transform: translateY(-10px);
+}
+#proficient1 {
+  animation: fadeInUp 0.8s ease-in-out forwards;
+  animation-delay: 1s;
+  background-color: #bd362c;
+}
+
+#proficient2 {
+  animation: fadeInUp 0.8s ease-in-out forwards;
+  animation-delay: .9s;
+  background-color: #bd362c;
+}
+
+#intermediate1 {
+  animation: fadeInUp 0.8s ease-in-out forwards;
+  animation-delay: .8s;
+  background-color: #437cb1;
+}
+
+#intermediate2 {
+  animation: fadeInUp 0.8s ease-in-out forwards;
+  animation-delay: .7s;
+  background-color: #437cb1;
+}
+
+#intermediate3 {
+  animation: fadeInUp 0.8s ease-in-out forwards;
+  animation-delay: .6s;
+  background-color: #437cb1;
+}
+
+#intermediate4 {
+  animation: fadeInUp 0.8s ease-in-out forwards;
+  animation-delay: .5s;
+  background-color: #437cb1;
+}
+
+#intermediate5 {
+  animation: fadeInUp 0.8s ease-in-out forwards;
+  animation-delay: .4s;
+  background-color: #437cb1;
+}
+
+#intermediate6 {
+  animation: fadeInUp 0.8s ease-in-out forwards;
+  animation-delay: .3s;
+  background-color: #437cb1;
+}
+#novice1 {
+  animation: fadeInUp 0.8s ease-in-out forwards;
+  animation-delay: .2s;
+  background-color: #539869;
+}
+
+#proficient:nth-child(1) {
+  animation: fadeInUp 0.5s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+#proficient:nth-child(2) {
+  animation: fadeInUp 0.5s ease-in-out forwards;
+  animation-delay: 3s;
+}
+.skill-card h3{
+  color: black;
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+}
+
+.skill-card p {
+  color: black;
+  margin: 15px 0 0 0;
+}
+
+.card-link {
+  width: 150px;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
 table {
   border-collapse: collapse;
   width: 100%;
