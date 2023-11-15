@@ -100,15 +100,18 @@ nav a:hover {
 
 h1 {
   text-align: center;
+  text-shadow: 2px 3px 3px #333;
   font-weight:100;
   margin: 32vh 0 0 0 ;
   color: #ddb821;
   font-family: "Roboto Slab", sans-serif;
   font-size: 130px;
+  
 }
 
 #home-description {
   text-align: center;
+
   font-family: "Lato", sans-serif;
   font-size: 45px;
   color: #1f3b1f;
@@ -157,6 +160,13 @@ img#home {
   width: 100%;
 }
 
+img#mail {
+  border-radius: 20px;
+  width: 100%;
+}
+
+
+
 /* Resizing of homescreen at certain pixel widths. When there are less than
 860px then the navigation bar goes vertical */
 @media only screen and (max-width: 860px) {
@@ -188,7 +198,9 @@ img#home {
     padding: 10px;
     display: block;
   }
-
+  .div {
+    margin-top: 0;
+  }
   .page-titles {
     display: block;
     padding: 10px;
