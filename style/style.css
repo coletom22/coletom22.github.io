@@ -93,13 +93,15 @@ nav a:hover {
   display: flex;
   width: 100%;
   justify-content: center;
-  align-content: center;
+  flex-direction: row;
+  margin-top: -8vh;
+  padding: 0;
 }
 
 h1 {
   text-align: center;
   font-weight:100;
-  margin: 24vh 0 0 0 ;
+  margin: 32vh 0 0 0 ;
   color: #ddb821;
   font-family: "Roboto Slab", sans-serif;
   font-size: 130px;
@@ -150,8 +152,8 @@ figure:hover {
 }
 
 img#home {
+  box-shadow: 2px 3px 3px rgba(0,0,0,.6);
   border-radius: 20px;
-  border: 2px solid black;
   width: 100%;
 }
 
@@ -166,28 +168,37 @@ img#home {
     left: 0;
     height: 100%;
     width: 120px;
-    background-color: #000000;
+    background-color: #161616;
     z-index: 1;
     overflow-x: hidden;
     transition: 0.5s;
-
+    justify-content: center;
   }
   section {
     flex-direction: column;
   }
-  .center {
-    margin-left: 0;
-  }
-  .center a {
+  .page-titles a {
     font-size: 23px;
     margin: 40px;
   }
-  .center h1 {
+  .page-titles h1 {
     font-size: 26px;
   }
   nav a, nav h1 {
     padding: 10px;
     display: block;
+  }
+
+  .page-titles {
+    display: block;
+    padding: 10px;
+    text-align: center;
+  }
+  .page-titles a:nth-child(1) {
+    margin: 40px;
+  }
+  .left {
+    left: 16px;
   }
   h1 {
     opacity: 1;
